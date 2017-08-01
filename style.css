@@ -111,3 +111,73 @@ nav > ul > li > a {
   bottom: 0;
   right: 0;
 }
+
+main {
+  width: 100%;
+  height: 100vh;
+}
+
+.we {
+  position: relative;
+  width: 75%;
+  height: 80vh;
+  top: 35vh;
+}
+
+.we > img {
+  position: absolute;
+  width: 100%;
+}
+
+.about_us {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+}
+
+.about_us > p {
+  position: absolute;
+  top: 32vh;
+  font-family: 'Hind';
+  font-size: 2.35vh;
+}
+
+.our_realisations {
+  width: 75%;
+  display: grid;
+  position: relative;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-column-gap: 2vh;
+  grid-row-gap: 2vh;
+  top: 49vh;
+  right: -7vw;
+}
+
+.aboutUs_imgContainer {
+  height: 30vh;
+}
+
+.imgCnt--1 {
+  background-image: url(assets/img/5.jpg);
+  background-size: cover;
+  width: 100%;
+}
+
+.imgCnt--2 {
+  background-image: url(assets/img/6.jpg);
+  background-size: cover;
+  width: 100%;
+}
+
+.imgCnt--3 {
+  background-image: url(assets/img/7.jpg);
+  background-size: cover;
+  width: 100%;
+}
+
+.imgCnt--4 {
+  background-image: url(assets/img/8.jpg);
+  background-size: cover;
+  width: 100%;
+}
