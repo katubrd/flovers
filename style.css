@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Hind');
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+@import url('https://fonts.googleapis.com/css?family=Hind+Vadodara');
+
 
 
 body {
@@ -7,6 +9,12 @@ body {
   padding: 0;
   background-color: #fff;
 }
+
+p {
+  color: #5F7187;
+  font-family: 'Hind Vadodara';
+}
+
 
 header {
   width: 100%;
@@ -17,8 +25,10 @@ nav {
   position: fixed;
   text-align: center;
   width: 40%;
-  left: 5vw;
+  left: 0vw;
   top: 5vh;
+  background-color: #fff;
+  z-index: 7;
 }
 
 nav > ul {
@@ -26,25 +36,35 @@ nav > ul {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 7% 28% 28% 28%;
 }
 
 nav > ul > li {
   height: 5vh;
-  line-height: 3.4vh;
+  line-height: 4.7vh;
 }
 
 nav > ul > li > a {
   text-decoration: none;
   text-decoration-line: none;
-  font-family: 'Hind';
+  font-family: 'Hind Vadodara';
   color: black;
   font-size: 2vh;
+}
+
+.home {
+  width: 67%;
+  margin-left: 1.9vw;
 }
 
 .container {
   display: grid;
   grid-template-columns: 50% 50%;
+}
+
+p {
+  color: #5F7187;
+  font-family: 'Hind Vadodara';
 }
 
 .company_description {
@@ -57,8 +77,9 @@ nav > ul > li > a {
 
 .svg_container {
   position: absolute;
-  width: 89%;
-  left: 13vw;
+  width: 81%;
+  left: 15vw;
+  top: 7vh;
 }
 
 #logo {
@@ -67,25 +88,18 @@ nav > ul > li > a {
 
 .company_mission {
   position: absolute;
-  font-family: 'Hind';
-  font-size: 5vh;
-  color: #1BBC9B;
+  font-family: 'Hind Vadodara';
+  font-size: 3vh;
+  color: #48AD01;
   left: 23vw;
   top: 21vh;
-}
-
-.line_green {
-  position: absolute;
-  width: 75%;
-  border-top: 0.3vh solid #1BBC9B;
-  bottom: -11vh;
 }
 
 .line_black {
   position: absolute;
   width: 85%;
-  border-top: 0.39vh solid black;
-  bottom: -13vh;
+  border-top: 0.17vh solid #5F7187;
+  bottom: -19vh;
 
 }
 
@@ -114,19 +128,28 @@ nav > ul > li > a {
 
 main {
   width: 100%;
-  height: 100vh;
+  height: 101vh;
+  margin-bottom: 19vh;
 }
+
+.flovers_works {
+  color: #fff;
+  position: absolute;
+  display: inline-block;
+}
+
 
 .we {
   position: relative;
   width: 75%;
   height: 80vh;
-  top: 35vh;
+  top: 21vh;
 }
 
 .we > img {
   position: absolute;
   width: 100%;
+  top: 23vh;
 }
 
 .about_us {
@@ -137,9 +160,10 @@ main {
 
 .about_us > p {
   position: absolute;
-  top: 32vh;
-  font-family: 'Hind';
-  font-size: 2.35vh;
+  top: 45vh;
+  font-family: 'Hind Vadodara';
+  font-size: 1.9vh;
+  letter-spacing: 0.05vw;
 }
 
 .our_realisations {
@@ -150,7 +174,7 @@ main {
   grid-template-rows: 50% 50%;
   grid-column-gap: 2vh;
   grid-row-gap: 2vh;
-  top: 49vh;
+  top: 55vh;
   right: -7vw;
 }
 
@@ -180,4 +204,179 @@ main {
   background-image: url(assets/img/8.jpg);
   background-size: cover;
   width: 100%;
+}
+
+.container_gallery {
+  display: grid;
+  grid-template-columns: 70% 20%;
+}
+
+.projects {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.carusel {
+  position: relative;
+  width: 75%;
+}
+
+.carusel > img {
+  position: absolute;
+  width: 89%;
+  top: 19vh;
+}
+
+.protfolio_description > p {
+  position: absolute;
+  top: 37vh;
+  right: 13vw;
+  text-align: right;
+  line-height: 9vh;
+  font-size: 1.9vw;
+}
+
+.fading {
+  color: #48AD01;
+}
+
+.protfolio_description > button {
+  position: absolute;
+  width: 3.5vw;
+  height: 5vh;
+  bottom: 27vh;
+  border: none;
+  border-radius: 0.5vh;
+  background-color: transparent;
+  outline: none;
+}
+
+.protfolio_description > button:hover, button:active {
+  outline: none;
+}
+
+.protfolio_description > button > p {
+  width: 50%;
+  font-family: 'Monoton';
+  font-size: 7vh;
+  color: green;
+}
+
+.protfolio_description > button > p:hover {
+  color: pink;
+  transition: 0.5s linear;
+}
+
+.prev_btn {
+  right: 27vw;
+}
+
+.next_btn {
+  right: 13vw;
+}
+
+form {
+  position: absolute;
+  width: 70%;
+  top: 11vh;
+}
+
+fieldset {
+  position: relative;
+  width: 100%;
+  height: 7vh;
+  border: none;
+  background: none;
+  margin: 1.7vh 0;
+}
+
+label {
+  position: absolute;
+  height: 7vh;
+  width: 100%;
+}
+
+label > p {
+  font-size: 1.67vh;
+}
+
+input, textarea {
+  width:70%;
+  height: 6.5vh;
+  border: none;
+  border-bottom: 0.25vh solid #5991B1;
+}
+
+textarea {
+  height: 3.7vh;
+  margin-top: 3.3vh;
+}
+
+input:hover, textarea:hover, label:hover {
+  outline: none;
+  border-bottom: 0.25vh solid pink;
+  animation: contactHover 2s ease-in-out;
+  transition: 0.3s linear;
+}
+
+label:hover {
+  border-bottom: none;
+}
+
+@keyframes contactHover {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%
+  }
+}
+input:active, textarea:active, input:focus, textarea:focus {
+  outline: none;
+  border-bottom: 0.25vh solid pink;
+
+}
+
+.contact_form {
+  width: 100%;
+  height: 100vh;
+  align-items: end;
+}
+
+.contact_form > div {
+  position: relative;
+  height: 85vh;
+
+}
+
+.contact_form > div > p {
+  position: absolute;
+  top: 23vh;
+  left: 13.7vw;
+  font-size: 2.7vh;
+}
+
+.contact_form > div > img {
+  position: absolute;
+  width: 45%;
+  bottom: 7vh;
+}
+
+.social_icon {
+  position: absolute;
+  width: 7%;
+  top: 63vh;
+}
+
+.fcb {
+  left: 1.5vw;
+}
+
+.inst {
+  left: 10.5vw;
+}
+
+.pin {
+  left: 19.7vw;
 }
