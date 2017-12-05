@@ -1,0 +1,11 @@
+<svg class="h_bg" data-name="h_bg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 489.9 592">
+  <defs>
+    <style>
+      .header_bg {
+        fill: #ccd2c5;
+      }
+    </style>
+  </defs>
+  <title>bg_plant</title>
+  <rect class="header_bg" width="489.9" height="592"/>
+</svg>

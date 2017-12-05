@@ -1,382 +1,199 @@
-@import url('https://fonts.googleapis.com/css?family=Monoton');
-@import url('https://fonts.googleapis.com/css?family=Hind+Vadodara');
+@font-face {
+    font-family: 'argentinian_nights_by_kestrRg';
+    src: url('fonts/argentinian_nights-webfont.woff2') format('woff2'),
+         url('fonts/argentinian_nights-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'a_love_of_thunderregular';
+    src: url('fonts/a_love_of_thunder-webfont.woff2') format('woff2'),
+         url('fonts/a_love_of_thunder-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
 
 body {
-  width: 100%;
   margin: 0;
   padding: 0;
-  background-color: #fff;
-}
-
-p {
-  color: #5F7187;
-  font-family: 'Hind Vadodara';
-}
-
-
-header {
   width: 100%;
-  height: 100vh;
+  background-color: #f0f0f0;
 }
 
+
+/*navigation*/
 nav {
   position: fixed;
-  text-align: center;
-  width: 40%;
-  left: 0vw;
-  top: 5vh;
-  background-color: #fff;
-  z-index: 7;
+  width: 43%;
+  z-index: 5;
+  margin: 0 auto;
+  left: 1vw;
+  top: 4%;
 }
 
 nav > ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  list-style-type: none;
+  text-align: center;
   display: grid;
-  grid-template-columns: 7% 28% 28% 28%;
+  grid-template-columns: 33% 33% 33%;
+  text-align: center;
 }
 
-nav > ul > li {
-  height: 5vh;
-  line-height: 4.7vh;
-}
-
-nav > ul > li > a {
+nav ul a {
   text-decoration: none;
-  text-decoration-line: none;
-  font-family: 'Hind Vadodara';
-  color: black;
-  font-size: 2vh;
+  font-family: 'a_love_of_thunderregular';
+  color: #59733b;
 }
 
-.home {
-  width: 67%;
-  margin-left: 1.9vw;
-}
 
-.container {
-  display: grid;
-  grid-template-columns: 50% 50%;
-}
-
-p {
-  color: #5F7187;
-  font-family: 'Hind Vadodara';
-}
-
-.company_description {
+/*header general style*/
+header {
   width: 100%;
+  height: 100vh;
   position: relative;
-  height: 50vh;
-  align-self: center;
-  top: 5vh;
+  background-attachment: fixed;
+  /*overflow: hidden;*/
 }
 
-.svg_container {
+h1 {
+  opacity: 0;
+  position: absolute;
+  left: -50vw;
+}
+
+h2 {
+  font-family: 'a_love_of_thunderregular';
+  color: #59733b;
+  text-align: right;
+}
+
+.logo_container {
+  width: 30%;
+  position: absolute;
+  top: 27vh;
+  left: 9vw;
+}
+
+.logo_svg {
+  width: 100%;
+}
+
+.logo {
+  fill:#545454;
+}
+
+/*header - image tilt effect*/
+
+#header_parallax {
+  width: 37%;
+  position: absolute;
+  right: 9vw;
+  top: 4vh;
+}
+
+.header_border {
+  width: 79%;
+  position: relative;
+  top: -85vh;
+  right: -6vw;
+}
+
+.h_border {
+  fill:none;
+  stroke:#454744;
+  stroke-width: 7;
+  stroke-miterlimit:10;
+}
+
+.parallax_img {
+  width: 72%;
+  top: 9vh;
+  right: 3vw;
+  display: inline-block;
+  position: absolute;
+}
+
+.h_bg {
+  position: relative;
+  z-index: -5;
+  width: 93%;
+  top: 3vh;
+}
+
+.header_bg {
+  fill:#CCD2C5;
+}
+
+.about {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  margin-top: 3vh;
+}
+
+.photo_section {
+  width: 90%;
+  padding: 1%;
+  position: relative;
+}
+
+.about_img {
+  position: absolute;
+}
+
+.about_img1 {
+  width: 43%;
+  top: 13vh;
+  left: 3vw;
+}
+
+.about_img2 {
+  display: none;
+}
+
+.about_img3 {
+  top: 44vh;
+  left: 25vw;
+}
+
+.text_section {
+  position: relative;
+}
+
+.text_section > h3 {
+  position: absolute;
+  text-transform: uppercase;
+}
+
+.text_section_1 {
+  left: -31vw;
+  top: 17.3vh;
+}
+
+.text_section_2 {
+  left: -28vw;
+  top: 24vh;
+}
+
+.text_section_3 {
+  left: -15vw;
+  top: 30vh;
+}
+
+.about_logo {
   position: absolute;
   width: 81%;
-  left: 15vw;
-  top: 7vh;
-}
-
-#logo {
-  width: 50%;
-}
-
-.company_mission {
-  position: absolute;
-  font-family: 'Hind Vadodara';
-  font-size: 3vh;
-  color: #48AD01;
-  left: 23vw;
   top: 21vh;
+  left: -5vw;
 }
 
-.line_black {
+.mission {
   position: absolute;
-  width: 85%;
-  border-top: 0.17vh solid #5F7187;
-  bottom: -19vh;
-
-}
-
-.header_imgs {
-  position: relative;
-  width: 100%;
-  height:100vh;
-  overflow: hidden;
-}
-
-.header_imgs > img {
-  position: absolute;
-}
-
-.img_header-1 {
-  width: 120%;
-  top: 9vh;
-  right: 5vw;
-}
-
-.img_header-2 {
-  width: 50%;
-  bottom: 0;
-  right: 0;
-}
-
-main {
-  width: 100%;
-  height: 101vh;
-  margin-bottom: 19vh;
-}
-
-.flovers_works {
-  color: #fff;
-  position: absolute;
-  display: inline-block;
-}
-
-
-.we {
-  position: relative;
-  width: 75%;
-  height: 80vh;
-  top: 21vh;
-}
-
-.we > img {
-  position: absolute;
-  width: 100%;
-  top: 23vh;
-}
-
-.about_us {
-  position: relative;
-  width: 100%;
-  height: 90vh;
-}
-
-.about_us > p {
-  position: absolute;
-  top: 41vh;
-  font-family: 'Hind Vadodara';
-  font-size: 1.9vh;
-  letter-spacing: 0.05vw;
-}
-
-.our_realisations {
-  width: 75%;
-  display: grid;
-  position: relative;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
-  grid-column-gap: 2vh;
-  grid-row-gap: 2vh;
-  top: 55vh;
-  right: -7vw;
-}
-
-.aboutUs_imgContainer {
-  height: 30vh;
-}
-
-.imgCnt--1 {
-  background-image: url(assets/img/5.jpg);
-  background-size: cover;
-  width: 100%;
-}
-
-.imgCnt--2 {
-  background-image: url(assets/img/6.jpg);
-  background-size: cover;
-  width: 100%;
-}
-
-.imgCnt--3 {
-  background-image: url(assets/img/7.jpg);
-  background-size: cover;
-  width: 100%;
-}
-
-.imgCnt--4 {
-  background-image: url(assets/img/8.jpg);
-  background-size: cover;
-  width: 100%;
-}
-
-.container_gallery {
-  display: grid;
-  grid-template-columns: 70% 20%;
-}
-
-.projects {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-}
-
-.carusel {
-  position: relative;
-  width: 75%;
-}
-
-.carusel > img {
-  position: absolute;
-  width: 89%;
-  top: 19vh;
-}
-
-.protfolio_description > p {
-  position: absolute;
-  top: 37vh;
-  right: 13vw;
-  text-align: right;
-  line-height: 9vh;
-  font-size: 1.5vw;
-}
-
-.fading {
-  color: #48AD01;
-}
-
-.protfolio_description > button {
-  position: absolute;
-  width: 3.5vw;
-  height: 5vh;
-  bottom: 27vh;
-  border: none;
-  border-radius: 0.5vh;
-  background-color: transparent;
-  outline: none;
-}
-
-.protfolio_description > button:hover, button:active {
-  outline: none;
-}
-
-.protfolio_description > button > p {
-  width: 50%;
-  font-family: 'Monoton';
-  font-size: 7vh;
-  color: green;
-}
-
-.protfolio_description > button > p:hover {
-  color: pink;
-  transition: 0.5s linear;
-}
-
-.prev_btn {
-  right: 27vw;
-}
-
-.next_btn {
-  right: 13vw;
-}
-
-form {
-  position: absolute;
-  width: 70%;
-  top: 11vh;
-}
-
-fieldset {
-  position: relative;
-  width: 100%;
-  height: 7vh;
-  border: none;
-  background: none;
-  margin: 1.7vh 0;
-}
-
-label {
-  position: absolute;
-  height: 7vh;
-  width: 100%;
-}
-
-label > p {
-  font-size: 1.67vh;
-}
-
-input, textarea {
-  width:70%;
-  height: 6.5vh;
-  border: none;
-  border-bottom: 0.25vh solid #5991B1;
-}
-
-textarea {
-  height: 3.7vh;
-  margin-top: 3.3vh;
-}
-
-input:hover, textarea:hover, label:hover {
-  outline: none;
-  border-bottom: 0.25vh solid pink;
-  animation: contactHover 2s ease-in-out;
-  transition: 0.3s linear;
-}
-
-label:hover {
-  border-bottom: none;
-}
-
-@keyframes contactHover {
-  from {
-    width: 0;
-  }
-  to {
-    width: 70%
-  }
-}
-input:active, textarea:active, input:focus, textarea:focus {
-  outline: none;
-  border-bottom: 0.25vh solid pink;
-
-}
-
-.contact_form {
-  width: 100%;
-  height: 100vh;
-  align-items: end;
-}
-
-.contact_form > div {
-  position: relative;
-  height: 85vh;
-
-}
-
-.contact_form > div > p {
-  position: absolute;
-  top: 23vh;
-  left: 13.7vw;
-  font-size: 2.7vh;
-}
-
-.contact_form > div > img {
-  position: absolute;
-  width: 45%;
-  bottom: 7vh;
-}
-
-.social_icon {
-  position: absolute;
-  width: 7%;
-  top: 63vh;
-}
-
-.fcb {
-  left: 1.5vw;
-}
-
-.inst {
-  left: 10.5vw;
-}
-
-.pin {
-  left: 19.7vw;
+  top: 51vh;
+  left: -10vw;
+  right: 3vw;
+  text-align: justify;
 }
